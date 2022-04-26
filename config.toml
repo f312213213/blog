@@ -1,0 +1,29 @@
+baseURL = '/'
+languageCode = 'zh-TW'
+title = 'David'
+theme = "PaperMod"
+
+[params.homeInfoParams]
+Title = "Hi! I am David 👋"
+Content = "Nice to meet you!"
+
+[[params.socialIcons]]
+name = "Github"
+url = "https://github.com/f312213213"
+
+[[params.socialIcons]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/davidchien419/"
+
+[[params.socialIcons]]
+name = "Person"
+url = "https://chiendavid.com"
+
+[params]
+ShowCodeCopyButtons = true
+author = [ "David" ]
+ShowPostNavLinks= true
+ShowReadingTime= true
+ShowShareButtons= true
+ShowBreadCrumbs= true
+comments= true
