@@ -27,3 +27,8 @@ ShowReadingTime= true
 ShowShareButtons= true
 ShowBreadCrumbs= true
 comments= true
+
+[sitemap]
+changefreq = 'always'
+filename = 'sitemap.xml'
+priority = 0.5
