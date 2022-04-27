@@ -23,7 +23,6 @@ url = "https://chiendavid.com"
 ShowCodeCopyButtons = true
 author = [ "David" ]
 ShowPostNavLinks= true
-ShowReadingTime= true
 ShowShareButtons= true
 ShowBreadCrumbs= true
 comments= true
