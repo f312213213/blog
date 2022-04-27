@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://blog.chiendavid.com/'
 languageCode = 'zh-TW'
 title = 'David'
 theme = "PaperMod"
