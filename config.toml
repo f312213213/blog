@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://blog.chiendavid.com/'
 languageCode = 'zh-TW'
 title = 'David'
 theme = "PaperMod"
@@ -27,3 +27,8 @@ ShowReadingTime= true
 ShowShareButtons= true
 ShowBreadCrumbs= true
 comments= true
+
+[sitemap]
+changefreq = 'always'
+filename = 'sitemap.xml'
+priority = 0.5
