@@ -3,6 +3,8 @@ defaultContentLanguage = 'zh-tw'
 title = 'David'
 theme = "PaperMod"
 googleAnalytics = 'G-24NJ8FMP0K'
+env = "production"
+
 
 [params.homeInfoParams]
 Title = "Hi! I am David 👋"
@@ -32,3 +34,20 @@ comments= true
 changefreq = 'always'
 filename = 'sitemap.xml'
 priority = 0.5
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[menu]
+[[menu.main]]
+identifier = 'Archive'
+name = 'Archive'
+url = '/archives/'
+[[menu.main]]
+identifier = 'Search'
+name = 'Search'
+url = '/search/'
+[[menu.main]]
+identifier = 'Tags'
+name = 'Tags'
+url = '/tags/'
