@@ -1,7 +1,7 @@
 ---
 title: "用python寄信！使用Sendgrid API"
 date: 2021-07-20T01:19:01+08:00
-draft: false
+draft: true
 url: /posts/use-sendgrid-send-mail
 tags: [python, 技術]
 ---
