@@ -2,6 +2,8 @@
 title: "用python寄信！使用Sendgrid API"
 date: 2021-07-20T01:19:01+08:00
 draft: false
+url: /use-sendgrid-send-mail
+tags: [python, 技術]
 ---
 
 在python內要寄信的話有幾種方式，最廣為人知的應該是smtplib。但最近我將網站上線至GCP的時候發現平台把smpt的port給封鎖，於是google了一下發現要使用第三方的api服務才有辦法寄信，便找到的Twilio的sendgrid。就順便寫一篇文章來教大家怎麼用吧！
