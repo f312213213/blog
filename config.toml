@@ -25,7 +25,6 @@ ShowCodeCopyButtons = true
 author = [ "David" ]
 description = "我是簡毅，開始嘗試分享文章。"
 ShowPostNavLinks= true
-ShowShareButtons= true
 ShowBreadCrumbs= true
 comments= true
 
