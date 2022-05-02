@@ -8,6 +8,8 @@ tags: [Javascript面試練習]
 
 計畫把常被問到的前端面試問題自己消化過後發上來！
 
+有錯的話還請留言多多指教QQ
+
 ## Closure
 ### return a function
 傳進去的變數會記在這個 function 的 scope 裡，下次 call 的時候繼續使用。
