@@ -120,3 +120,65 @@ let b =[1, 2]
 a === b // false 因為兩者的記憶體位置不同
 ```
 
+### useCallback vs useMemo vs memo
+#### memo
+用法：把 functional component 包起來，比較從外部傳進去的 props 是否相等，有改變才會 rerender。
+
+目地：防止 component 在 props 一樣的狀況下 rerender
+
+但只進行 shallow compare，若傳入的是 Non-Primitive 則需多帶一個參數 areEqual
+```javascript
+state = {
+  title: '',
+  releaseDate: ''
+}
+function qreEqual(prevState, nextState) {
+  return prevState.title === nextState.title
+    && prevState.releaseDate === nexnextStatetMovie.releaseDate;
+}
+// usage
+React.memo(Component, qreEqual);
+```
+
+#### useCallback
+用法：把 function 包起來，當 dependency array 裡的值改變了，才會重新執行 function.
+
+目地：防止 function 在 不相干的變數改變時，依舊重新執行。
+
+```javascript
+const complete2 = useCallback(() => {
+    console.log('運算')
+    let sum = 0
+    for (let i = 0; i < content2; i++) {
+      sum += i
+    }
+    return sum
+  }, [content2])
+// complete2 is a funciton
+```
+
+#### useMemo
+用法：把 function 包起來，當 dependency array 裡的值改變了，才會重新執行 function，並獲得一個新的值。
+
+目地：防止 function 在 不相干的變數改變時，依舊重新執行。
+
+```javascript
+const complete2 = useMemo(() => {
+    console.log('運算')
+    let sum = 0
+    for (let i = 0; i < content2; i++) {
+      sum += i
+    }
+    return sum
+  }, [content2])
+
+// complete2 is a value
+```
+
+##### useCallback vs useMemo
+兩個參數一模一樣，差異在於 useCallback return function, useMemo return value
+
+useCallback -> function
+
+useMemo -> value
+
