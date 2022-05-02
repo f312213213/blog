@@ -146,15 +146,27 @@ React.memo(Component, qreEqual);
 目地：防止 function 在 不相干的變數改變時，依舊重新執行。
 
 ```javascript
-const complete2 = useCallback(() => {
-    console.log('運算')
-    let sum = 0
-    for (let i = 0; i < content2; i++) {
-      sum += i
-    }
-    return sum
-  }, [content2])
-// complete2 is a funciton
+const sumContentUseCallback = useCallback(() => {
+  console.log('運算')
+  let sum = 0
+  for (let i = 0; i < content2; i++) {
+    sum += i
+  }
+  return sum
+}, [content2])
+// sumContentUseCallback is a funciton
+// 用的時候這樣用
+export const AddCallback = ({ sumContentUseCallback }) => {
+  const [sum, setSum] = React.useState(0)
+  React.useEffect(() => {
+    setState(sumContentUseCallback())
+  }, [complete2])
+  return (
+      <div>
+        useCallback 累加：{sum}
+      </div>
+  )
+}
 ```
 
 #### useMemo
@@ -163,16 +175,23 @@ const complete2 = useCallback(() => {
 目地：防止 function 在 不相干的變數改變時，依舊重新執行。
 
 ```javascript
-const complete2 = useMemo(() => {
-    console.log('運算')
-    let sum = 0
-    for (let i = 0; i < content2; i++) {
-      sum += i
-    }
-    return sum
-  }, [content2])
-
-// complete2 is a value
+const sumContentUseMemo = useMemo(() => {
+  console.log('運算')
+  let sum = 0
+  for (let i = 0; i < content2; i++) {
+    sum += i
+  }
+  return sum
+}, [content2])
+// sumContentUseMemo is a value
+// 用的時候這樣用
+export const AddMemo = ({ complete2 }) => {
+  return (
+      <div>
+        useMemo 累加：{complete2}
+      </div>
+  )
+}
 ```
 
 ##### useCallback vs useMemo
