@@ -4,6 +4,7 @@ title = 'David'
 theme = "PaperMod"
 googleAnalytics = 'G-24NJ8FMP0K'
 env = "production"
+picture = "favicon.ico"
 
 
 [params.homeInfoParams]
