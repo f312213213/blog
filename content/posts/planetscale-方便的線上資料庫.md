@@ -2,7 +2,7 @@
 title: "Planetscale 方便的線上資料庫"
 date: 2022-05-12T16:56:28+08:00
 draft: false
-url: /posts/planetscale-方便的線上資料庫
+url: /posts/planetscale-easy-online-database
 tags: [web, back-end]
 ---
 
