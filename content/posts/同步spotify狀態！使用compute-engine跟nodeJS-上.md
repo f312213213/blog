@@ -3,7 +3,7 @@ title: "同步spotify狀態！使用compute Engine跟nodeJS - 上"
 date: 2022-05-03T23:26:36+08:00
 draft: false
 url: /posts/sync-spotify-with-web-1
-tags: [javascript, web, back-end]
+tags: [javascript, web, back-end, project]
 ShowToc: true
 ---
 ***
