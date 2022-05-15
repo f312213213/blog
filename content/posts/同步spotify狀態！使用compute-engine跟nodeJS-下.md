@@ -86,7 +86,10 @@ sudo service nginx restart
 1. 串接到自己的個人網站。
 2. 可以研究怎麼把連線升級為 https。
 
-
+## 資料來源
+1. [GCP 免費額度](https://cloud.google.com/free)
+2. [Nginx 伺服器連線](https://javascript.plainenglish.io/deploy-a-node-js-server-using-google-cloud-compute-engine-87268919de20)
+3. [Lee Robinson](https://leerob.io/)
 
 
 
