@@ -15,7 +15,7 @@ Planetscale 就直接幫你完成這些步驟，點一點按鈕就給你一個�
 
 ## 怎麼使用
 直接到 [Planetscale的官網](https://planetscale.com/) 註冊後到 Dashboard 裡創建一個新的庫，會有下面畫面。
-![創建](/images/Screen%20Shot%202022-05-12%20at%2017.03.49.png)
+![創建](/images/planetscale/Screen%20Shot%202022-05-12%20at%2017.03.49.png)
 
 輸入資料庫名字、區域後等他跑完就可以直接使用了。到右邊有個 connect 按鈕點下去會有彈窗給你相對應的連接指示。
 
@@ -29,5 +29,5 @@ Planetscale 就直接幫你完成這些步驟，點一點按鈕就給你一個�
 
 ## 酷炫功能
 玩一玩網站發現裡面有 console 可以直接使用，覺得挺炫砲。
-![直接有 console](/images/Screen%20Shot%202022-05-13%20at%2014.42.44.png)
+![直接有 console](/images/planetscale/Screen%20Shot%202022-05-13%20at%2014.42.44.png)
 
